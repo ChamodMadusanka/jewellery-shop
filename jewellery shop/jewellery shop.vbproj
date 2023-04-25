@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C0A11B3C-E432-4460-A575-C4D50167C15A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>jewellery_shop.My.MyApplication</StartupObject>
+    <RootNamespace>jewellery_shop</RootNamespace>
+    <AssemblyName>jewellery shop</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>jewellery shop.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>jewellery shop.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.4, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.4\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Billing.Designer.vb">
+      <DependentUpon>Billing.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Billing.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customers.Designer.vb">
+      <DependentUpon>Customers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Customers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashbord.Designer.vb">
+      <DependentUpon>Dashbord.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Dashbord.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Products.Designer.vb">
+      <DependentUpon>Products.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Products.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.Designer.vb">
+      <DependentUpon>Splash.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Billing.resx">
+      <DependentUpon>Billing.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customers.resx">
+      <DependentUpon>Customers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashbord.resx">
+      <DependentUpon>Dashbord.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Products.resx">
+      <DependentUpon>Products.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\beautiful-luxury-necklace-jewelry-stand-neck %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login-icon-3048.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngfind.com-password-icon-png-2021854.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bg 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5115 [Converted].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11367 [Converted].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2011.i121.011_isometric_pawn_shop_illustration [Converted].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\19470 [Converted].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11367 [Converted]1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17 [Converted]t.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OFP6900.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2002.i402.054..Jewelry flat 4x4 [Converted].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\11367 [Converted]2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17 [Converted].jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OFP6901b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OFP6901ff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OFP6901yyyyy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OFP6901fffffffffff.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\17 [Converted]g.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2541107d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2541101.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2541107d1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\budget.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\watch_salon_04 [Converted].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refesh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-arrow-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-go-back-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-go-back-481.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
